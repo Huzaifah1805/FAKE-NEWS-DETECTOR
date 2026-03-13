@@ -1,10 +1,8 @@
 import axios from 'axios';
 
-// During development Vite proxy maps /api to localhost:8000
-const API_URL = import.meta.env.VITE_API_BASE_URL || '/api/v1';
-
+// Create axios instance with base URL pointing to the Vercel API routes
 export const api = axios.create({
-  baseURL: API_URL,
+  baseURL: import.meta.env.VITE_API_BASE_URL || '/api/v1',
   headers: {
     'Content-Type': 'application/json'
   }
