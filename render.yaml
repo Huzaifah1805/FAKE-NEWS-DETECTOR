@@ -1,3 +1,4 @@
+version: "1"
 services:
   # Backend API
   - type: web
@@ -22,7 +23,7 @@ services:
         fromService:
           type: web
           name: fake-news-backend
-          property: hostport
+          envVarKey: RENDER_EXTERNAL_URL
     routes:
       - type: rewrite
         source: "/*"
