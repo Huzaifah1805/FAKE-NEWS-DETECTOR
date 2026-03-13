@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Search, Link as LinkIcon, AlertCircle, CheckCircle } from 'lucide-react';
-import { detectFakeNews } from '../services/api';
+import { detectFakeNews } from '../services/api.js';
 
 const Home = () => {
   const [inputType, setInputType] = useState('text');

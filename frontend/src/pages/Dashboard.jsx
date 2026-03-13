@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getHistory, getStats } from '../services/api';
+import { getHistory, getStats } from '../services/api.js';
 import {
   Chart as ChartJS,
   CategoryScale,
