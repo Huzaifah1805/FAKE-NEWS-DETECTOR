@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.env
+
+# Dataset (Avoid committing large CSVs)
+dataset/*.csv
+backend/app/ml/saved_models/*.pkl
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Mac
+.DS_Store
