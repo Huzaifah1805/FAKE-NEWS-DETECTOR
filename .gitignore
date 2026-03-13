@@ -8,7 +8,8 @@ venv/
 
 # Dataset (Avoid committing large CSVs)
 dataset/*.csv
-backend/app/ml/saved_models/*.pkl
+# Models are required for production deployment
+# backend/app/ml/saved_models/*.pkl (Removing this to allow models)
 
 # Node
 node_modules/
